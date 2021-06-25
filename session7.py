@@ -56,15 +56,6 @@ def div(a, b):
     else:
         return a/b
 
-def my_counter(fn):
-    '''This function used to calcualte how many times a funtion is called
-    '''
-    cnt = 0
-    def inner(*args,**kwargs):
-        nonlocal cnt
-        cnt+=1
-        return cnt
-    return inner
 
 counters = dict()
 def global_dictionary_variable_with_the_counts(fn):
@@ -94,7 +85,3 @@ def counter(fn, counters):
     counters[fn.__name__] = cnt
     return fn(*args, **kwargs)
   return inner
-
-c = dict()
-m = dict()
-d = dict()
