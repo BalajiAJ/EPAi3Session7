@@ -1,4 +1,4 @@
-# Assignment 7
+# Session 7
 
 in this assignment we will go over global scope, local scope , nonlocal scope, free variable, closures
 
